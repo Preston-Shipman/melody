@@ -5,7 +5,7 @@ const { ProvidedRequiredArgumentsOnDirectivesRule } = require('graphql/validatio
 
 module.exports = {
   Post: {
-    likeCount: (parent) => parent.likes.length;
+    likeCount: (parent) => parent.likes.length,
     commentCount: (parent) => parent.comments.length
   },
   Query: {
